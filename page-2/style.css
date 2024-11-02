@@ -1,0 +1,170 @@
+:root {
+	--Colors-Black: #000000;
+	--Color-Background: #aeaeae;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background: var(--Color-Background);
+}
+
+section {
+	max-width: 595px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 0px 5px, -1px 0px 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 34px 40px 48px 40px;
+}
+
+h2 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15px; /* 115.385% */
+	letter-spacing: 0.2px;
+}
+
+h3 {
+	color: var(--Colors-Black);
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 18px; /* 163.636% */
+}
+
+.paragraph {
+	opacity: 0.6;
+	font-family: 'Hind', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.header__title {
+	color: var(--Colors-Black);
+	text-align: center;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px; /* 138.889% */
+}
+
+.header__subtitle {
+	opacity: 0.6;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+}
+
+.block {
+	border-top: 1.5px solid var(--Color-Background);
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.profile {
+	display: flex;
+	flex-direction: row;
+	gap: 88px;
+}
+
+.education {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.education__list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.list-block {
+	display: flex;
+	flex-direction: row;
+}
+
+.education .list-block:nth-child(1) {
+	gap: 38px;
+}
+
+.education .list-block:nth-child(2) {
+	gap: 40px;
+}
+
+.education__list-item {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.list-block__head {
+	color: var(--Color-Background);
+	font-family: 'Hind', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+	position: relative;
+	top: 2px;
+	white-space: nowrap;
+}
+
+.employment {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.employment .list-block:nth-child(1) {
+	gap: 43px;
+}
+
+.employment .list-block:nth-child(2) {
+	gap: 45px;
+}
+
+.employment .list-block:nth-child(3) {
+	gap: 42px;
+}
+
+.skills {
+	display: flex;
+	flex-direction: row;
+}
+
+.skills p {
+	opacity: 0.5;
+	font-family: 'Hind', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+}
+
+.skills__list {
+	margin: 0 0 0 95px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
