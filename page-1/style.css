@@ -1,0 +1,230 @@
+:root {
+	--Colors-Gray: #5c5c5c;
+	--Colors-Black: #000000;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background: #aeaeae;
+}
+
+section {
+	max-width: 595px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 0px 5px, -1px 0px 5px;
+	padding: 37px 40px 72px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+h1 {
+	color: var(--Colors-Black);
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 25px; /* 104.167% */
+}
+
+h2 {
+	color: var(--Colors-Black);
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15px; /* 115.385% */
+	letter-spacing: 0.2px;
+}
+
+.block-summary {
+	display: flex;
+	flex-direction: row;
+	gap: 79px;
+}
+
+.block-summary__body {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.block-summary__body p {
+	color: var(--Colors-Gray);
+	font-family: 'Hind', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 10px; /* 100% */
+	letter-spacing: 0.8px;
+}
+
+.block-contacts {
+	display: flex;
+	flex-direction: row;
+	gap: 84px;
+}
+
+.block-contacts__list li {
+	list-style: none;
+	list-style-position: inside;
+	position: relative;
+
+	--marker-size: 3px;
+	--gap-right: 7px;
+	--gap-left: 0px;
+
+	padding-left: calc(
+		var(--marker-size) * 2 + var(--gap-right) + var(--gap-left)
+	);
+	margin: 0 0 2px 0;
+}
+
+.block-contacts__list li::before {
+	content: ''; /*порожній псевдоелемент, який використовується як маркер*/
+	width: var(--marker-size); /*ширина маркера*/
+	height: var(--marker-size); /*висота маркера*/
+	background: var(--Colors-Black);
+	display: inline-block; /*робить псевдоелемент ::before блочним, щоб можна було застосувати розмір*/
+
+	position: absolute;
+	top: calc(50% - calc(var(--marker-size) / 2));
+	left: calc(var(--marker-size) / 2 + var(--gap-left));
+}
+
+.block-contacts__list span {
+	color: var(--Colors-Gray);
+	font-family: 'Hind', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+}
+
+.block-profile {
+	display: flex;
+	flex-direction: row;
+	gap: 98px;
+}
+
+.paragraph {
+	color: var(--Colors-Gray);
+	font-family: 'Hind', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+}
+
+.block-education {
+	display: flex;
+	flex-direction: row;
+	gap: 76px;
+}
+
+.block-education__body {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%; /* вказую, що цей блок має займати всю доступну ширину*/
+}
+
+.block-education__body-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.block-education__body-div h3 {
+	color: var(--Colors-Black);
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 18px; /* 163.636% */
+}
+
+.block-education__body-div p {
+	color: var(--Colors-Gray);
+	font-family: 'Hind', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+	/*позиціоную текст як на макеті*/
+	position: relative;
+	top: calc(50% / 5);
+}
+
+.block-employment {
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+}
+
+.block-employment__body-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.space-bottom {
+	margin: 0 0 15px 0;
+}
+
+.block-s-skills {
+	display: flex;
+	flex-direction: row;
+	gap: 77px;
+}
+
+.block-skills-lists {
+	position: relative;
+	top: -3px;
+	display: flex;
+	gap: 81px;
+}
+
+.block-skills__list-mod li {
+	list-style: none;
+	list-style-position: inside;
+	position: relative;
+
+	--marker-size: 3px;
+	--gap-right: 7px;
+	--gap-left: 0px;
+
+	padding-left: calc(
+		var(--marker-size) * 2 + var(--gap-right) + var(--gap-left)
+	);
+	margin: 0 0 4px 0 ;
+}
+
+.block-skills__list-mod li::before {
+	content: ''; /*порожній псевдоелемент, який використовується як маркер*/
+	width: var(--marker-size); /*ширина маркера*/
+	height: var(--marker-size); /*висота маркера*/
+	background: var(--Colors-Black);
+	display: inline-block; /*робить псевдоелемент ::before блочним, щоб можна було застосувати розмір*/
+
+	position: absolute;
+	top: calc(50% - calc(var(--marker-size) / 2));
+	left: calc(var(--marker-size) / 2 + var(--gap-left));
+}
+
+.block-skills-lists span {
+	color: var(--Colors-Black);
+	font-family: 'Hind', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+}
+
+.block-t-skills {
+	display: flex;
+	flex-direction: row;
+	gap: 43px;
+}
