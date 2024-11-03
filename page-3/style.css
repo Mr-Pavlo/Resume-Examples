@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background: #aeaeae;
+}
+
+section {
+	max-width: 595px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 0px 5px, -1px 0px 5px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+h1 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 25px; /* 104.167% */
+}
+
+img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+h2 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15px; /* 115.385% */
+	letter-spacing: 0.2px;
+}
+
+p {
+	font-family: 'Hind', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+	opacity: 0.6;
+}
+
+h3 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 18px; /* 163.636% */
+}
+
+.head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1.2px solid #aeaeae;
+	padding: 0 0 19.5px 0;
+}
+
+.head__left {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+}
+
+.head__left div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.head__left p {
+	font-family: 'Hind', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 10px; /* 100% */
+	letter-spacing: 0.8px;
+	opacity: 0.6;
+}
+
+.body {
+	padding: 24.5px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	width: 100%;
+}
+
+.body__left {
+	border-right: 1.2px solid #aeaeae;
+	padding-right: 25px;
+	width: calc(50% + 25px);
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.body__right {
+	width: 50%;
+	gap: 30px;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.employment {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.employment__block {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.employment__block-year {
+	opacity: 0.5;
+	font-family: 'Hind', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+	display: flex;
+	position: relative;
+	top: 1px;
+	width: 10%;
+}
+
+.employment__parant {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.employment__block-gap {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.body__left .employment__parant p {
+	width: 100%;
+}
+
+.employment__parant p {
+	width: 96%;
+}
+
+.profile_lists {
+	display: flex;
+	flex-direction: row;
+	gap: 39px;
+}
+
+.profile_lists h3 {
+	margin:  0 0 5px 0;
+}
+
+.profile_lists-style ul {
+	list-style: none;
+}
+
+.profile_lists-style li {
+	font-family: 'Hind', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+	opacity: 0.6;
+}
