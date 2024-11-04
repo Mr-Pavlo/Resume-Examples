@@ -1,0 +1,241 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background: #aeaeae;
+}
+
+section {
+	background: #fff;
+	max-width: 595px;
+	margin: 0 auto;
+	box-shadow: 1px 0px 5px, -1px 0px 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+h1 {
+	color: #000000;
+	font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 25px; /* 104.167% */
+}
+
+h2 {
+	font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15px; /* 115.385% */
+	letter-spacing: 0.2px;
+}
+
+h3 {
+	color: #000000;
+	font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 18px; /* 163.636% */
+}
+
+p {
+	color: #000000;
+	font-family: 'Hind', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 19px; /* 172.727% */
+	letter-spacing: -0.2px;
+	opacity: 0.6;
+}
+
+.header-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding: 0 0 24.5px 0;
+	border-bottom: 1px solid #aeaeae;
+	margin: 0 0 19.5px 0;
+}
+
+.header-wrapper img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.about-header > p {
+	color: #000000;
+	font-family: 'Hind', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 10px; /* 100% */
+	letter-spacing: 0.8px;
+	opacity: 0.6;
+	margin: 0 0 9px 0;
+}
+
+.about-header > h1 {
+	margin: 0 0 11px 0;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: row;
+	gap: 65px;
+}
+
+.profile-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0 0 19.5px 0;
+	border-bottom: 1px solid #aeaeae;
+	margin: 0 0 24.5px 0;
+}
+
+.body-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.left-section {
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #aeaeae;
+	padding: 0 29.5px 0 0;
+	margin: 0 15.5px 0 0;
+	gap: 25px;
+	width: 64%;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.education {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.education > div {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.content-education > p {
+	font-family: 'Hind', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+	position: relative;
+	top: 1px;
+}
+
+.content-education {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.employment {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.employment div:last-child {
+    margin: 0 0 30px 0;
+}
+
+.employment-head {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.employment-head p {
+	position: relative;
+	top: 1px;
+	font-family: 'Hind', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+}
+
+.skills h2 {
+	margin: 0 0 15px 0;
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+}
+
+.skill-progress > div > p {
+	font-family: 'Hind', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+	position: relative;
+	top: 1px;
+    margin: 0 0 5px 0;
+}
+
+.skill-progress > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+progress {
+    height: 3px;
+    display: block;
+    margin: 0 0 7px 0;
+}
+
+progress::-webkit-progress-bar {
+    height: 3px;
+    border-radius: 2.5px;
+    background: #eee;
+}
+
+progress::-webkit-progress-value {
+	border-radius: 2.5px;
+    background: #3e6af2;
+}
+
+.cetrifications {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cetrifications > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.cetrifications p {
+    font-family: 'Hind', Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 18px; /* 180% */
+    position: relative;
+	top: 1px;
+}
+
+.cetrifications > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
